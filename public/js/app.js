@@ -6,7 +6,7 @@ const msg2 = document.querySelector("#message-2");
 weatherForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const location = searchElement.value;
-  const geocodeurl = `http://localhost:3000/weather?address=${location}`;
+  const geocodeurl = `/weather?address=${location}`;
   msg1.textContent = "Loading...";
   msg2.textContent = "";
   fetch(geocodeurl).then((res) => {
