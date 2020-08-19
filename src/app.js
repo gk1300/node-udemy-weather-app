@@ -27,13 +27,6 @@ app.get("", (req, res) => {
   });
 });
 
-app.get("/jyoti", (req, res) => {
-  res.render("jyoti", {
-    title: "I love you",
-    name: "Gaurav",
-  });
-});
-
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "about page",
